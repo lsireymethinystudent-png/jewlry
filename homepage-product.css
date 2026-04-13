@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.card {
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 50px;
+}

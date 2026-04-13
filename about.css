@@ -1,0 +1,57 @@
+/* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfaf7;
+            color: #333;
+        }
+
+        /* Flexbox Layout */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content:间-between;
+            gap: 40px;
+        }
+
+        /* Text Side */
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h1 {
+            font-size: 2.5rem;
+            color: #b8860b; /* Golden tone */
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Image Side */
+        .about-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Mobile Responsive: Stack items vertically on small screens */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column-reverse; /* Image moves to top */
+                text-align: center;
+            }
+            .about-image {
+                text-align: center;
+            }
+        }
